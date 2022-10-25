@@ -1,0 +1,29 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch src --ext ts --exec \"tsc && fastify start --address 0.0.0.0 --port 3000 --log-level debug --pretty-logs dist/app.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.4.1",
+    "@fastify/websocket": "^7.1.0",
+    "fastify": "^4.9.2",
+    "fastify-plugin": "^4.3.0",
+    "mysql2": "^2.3.3",
+    "pino-pretty": "^9.1.1",
+    "typeorm": "^0.3.10",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.5",
+    "@types/ws": "^8.5.3",
+    "fastify-cli": "^5.5.0",
+    "fastify-tsconfig": "^1.0.1",
+    "nodemon": "^2.0.20"
+  }
+}

@@ -1,0 +1,15 @@
+{
+ "extends": "fastify-tsconfig",
+ "compilerOptions": {
+  "outDir": "dist",
+  "emitDecoratorMetadata": true,
+  "experimentalDecorators": true,
+
+  "strict": true,
+  "strictNullChecks": true,
+  "baseUrl": "."
+ },
+ "include": [
+  "src/**/*.ts"
+ ]
+}
